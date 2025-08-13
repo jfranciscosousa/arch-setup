@@ -2,11 +2,11 @@
 
 echo "Installing terminal tools..."
 echo "Installing zsh..."
-sudo pacman -S --noconfirm zsh >/dev/null
+sudo pacman -S --noconfirm zsh direnv ghostty
 
 echo "Installing zgen..."
 rm -rf "${HOME}/.zgen"
-git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen" >/dev/null
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
 echo "Installing asdf..."
 yay -S --noconfirm asdf-vm
@@ -45,3 +45,13 @@ sudo -u postgres initdb --locale=C.UTF-8 --encoding=UTF8 -D /var/lib/postgres/da
 sudo systemctl start postgresql.service
 sudo -u postgres createuser $USER --no-password --superuser
 createdb $USER
+
+echo "Installing chezmoi..."
+sudo pacman -S --noconfirm chezmoi
+chezmoi init
+cd ~/.local/share/chezmoi
+rm -rf .git
+git clone https://github.com/jfranciscosousa/dotfiles.git .
+chezmoi apply
+# Now put it back into SSH, we'll configure this manually after the install
+git remote set-url origin git@github.com:jfranciscosousa/dotfiles.git

@@ -1,4 +1,4 @@
-set -e
+#!/bin/bash
 
 echo "=> This script is for fresh CachyOS installations with Gnome only!"
 
@@ -8,4 +8,4 @@ rm -rf ~/.local/share/jfranciscosousa-arch-setup
 git clone https://github.com/jfranciscosousa/arch-setup.git ~/.local/share/jfranciscosousa-arch-setup
 
 echo "Installation starting..."
-source ~/.local/share/jfranciscosousa-arch-setup/install.sh
+echo "source ~/.local/share/jfranciscosousa-arch-setup/install.sh" | bash
