@@ -14,6 +14,7 @@ source ~/.local/share/jfranciscosousa-arch-setup/scripts/desktop.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/dock.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/fonts.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/theme.sh
+source ~/.local/share/jfranciscosousa-arch-setup/scripts/keys.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/remove-packages.sh
 
 # Enable lock screen again
