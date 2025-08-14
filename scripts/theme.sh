@@ -33,3 +33,5 @@ gsettings set org.gnome.desktop.calendar show-weekdate true
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
 # Set Cascadia Mono as the default monospace font
 gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaMono Nerd Font 10'
+# Enable VRR
+gsettings set org.gnome.mutter experimental-features "['variable-refresh-rate']"
