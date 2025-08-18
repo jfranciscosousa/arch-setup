@@ -2,6 +2,9 @@
 
 echo "Setting up the keybindings..."
 
+# Remove hot corners
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+
 # Alt+F4 is very cumbersome
 gsettings set org.gnome.desktop.wm.keybindings close "['<Control>q']"
 

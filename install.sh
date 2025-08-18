@@ -16,6 +16,7 @@ source ~/.local/share/jfranciscosousa-arch-setup/scripts/fonts.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/theme.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/keys.sh
 source ~/.local/share/jfranciscosousa-arch-setup/scripts/remove-packages.sh
+source ~/.local/share/jfranciscosousa-arch-setup/scripts/fix-nvidia-suspend.sh
 
 # Enable lock screen again
 gsettings set org.gnome.desktop.screensaver lock-enabled true
