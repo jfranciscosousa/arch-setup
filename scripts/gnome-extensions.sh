@@ -13,6 +13,7 @@ pipx install gnome-extensions-cli --system-site-packages --force
 ~/.local/bin/gext install AlphabeticalAppGrid@stuarthayhurst
 ~/.local/bin/gext install caffeine@patapon.info
 ~/.local/bin/gext install unblank@sun.wxg@gmail.com
+~/.local/bin/gext install highlight-focus@pimsnel.co
 
 # Compile gsettings schemas in order to be able to set them
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
@@ -23,6 +24,7 @@ sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas
 sudo cp ~/.local/share/gnome-shell/extensions/AlphabeticalAppGrid\@stuarthayhurst/schemas/org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/caffeine@patapon.info/schemas/org.gnome.shell.extensions.caffeine.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/unblank@sun.wxg@gmail.com/schemas/org.gnome.shell.extensions.unblank.gschema.xml /usr/share/glib-2.0/schemas
+sudo cp ~/.local/share/gnome-shell/extensions/highlight-focus@pimsnel.com/schemas/org.gnome.shell.extensions.highlight-focus.gschema.xml /usr/share/glib-2.0/schemas
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Configure Tactile
@@ -73,3 +75,7 @@ gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-posi
 
 # Configure Caffeine
 gsettings set org.gnome.shell.extensions.caffeine enable-fullscreen false
+
+# Configure highlight focus
+gsettings set org.gnome.shell.extensions.highlight-focus keybinding-highlight-now "[]"
+gsettings set org.gnome.shell.extensions.highlight-focus disable-hiding false
