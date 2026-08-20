@@ -1,5 +1,7 @@
 # arch-setup
 
+Update: archived, I'm going all in on [Omarchy](https://omarchy.org/)
+
 This is my version of a dumbed down `Omakub` setup script. It's meant to be ran on a `CachyOS` (or `arch`) install with the base `Gnome` packages installed.
 
 This is open-sourced just for the sake of being able to install this on any machine without logging in into Github. It's absolutely customized for me and I don't recommend anyone else to install it.
